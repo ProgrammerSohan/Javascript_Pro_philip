@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Caltculator Example</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <label for="field1">X</label>
+        <input type="text" id="field1" value="5">
+        </div>
+        <div class="row">
+            <label for="field2">Y</label>
+            <input type="text" id="field2" value="5">
+        </div>
+        <div class="row">
+            <label for="result">Result:</label>
+            <input type="text" id="result">
+            <button onclick="calculateSum()">Calculate Sum</button>
+        </div>
+    </div>
+    <script>
+        function calculateSum(){
+            const x = parseInt(document.getElementById('field1').value);
+            const y = parseInt(document.getElementById('field2').value);
+            document.getElementById('result').value = x + y;
+        }
+
+    </script>    
+
+</body>
+</html>
